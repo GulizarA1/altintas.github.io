@@ -1,8 +1,8 @@
-const game=document.quervSelector(".game");
+const game=document.querySelector(".game");
 const racket=document.createElement("div");
 racket.classList.add("racket");
 game.appendChild(racket);
-const ball=document=createElement("div");
+const ball=document.createElement("div");
 
 game.appendChild(ball);
 
@@ -17,7 +17,7 @@ let right
 let leftright=Math.floor(Math.random()*2);
 leftright?(right=true):(right=false);
 
-const bricks()=>{
+const bricks= ()=>{
     let left=1
     let top=1
     for (let i=1;i<brickcount;i++)
@@ -46,24 +46,24 @@ const bricks()=>{
 
 let ballwidth=parseInt(window.getComputedStyle(ball).getPropertyValue("width"));
 let balltop = parseInt(window.getComputedStyle(ball).getPropertyValue("top"));
-let ballbottom =parseInt(widow.getComputedStyle(ball).getPropertyValue("buttom"));
+let ballbottom =parseInt(window.getComputedStyle(ball).getPropertyValue("buttom"));
 let ballright = parseInt(window.getComputedStyle(ball).getPropertyValue("right"));
-let ballleft = parseInt(window.getComputedStyle(ball).get.getPropertyValue("left"));
+let ballleft = parseInt(window.getComputedStyle(ball).getPropertyValue("left"));
 
 
 let barrwidth=parseInt(window.getComputedStyle(racket).getPropertyValue("width"));
 let bartop = parseInt(window.getComputedStyle(racket).getPropertyValue("top"));
-let barbottom =parseInt(widow.getComputedStyle(racket).getPropertyValue("buttom"));
+let barbottom =parseInt(window.getComputedStyle(racket).getPropertyValue("buttom"));
 let barright = parseInt(window.getComputedStyle(racket).getPropertyValue("right"));
-let barleft = parseInt(window.getComputedStyle(racket).get.getPropertyValue("left"));
+let barleft = parseInt(window.getComputedStyle(racket).getPropertyValue("left"));
 
 
 let boardwidth=parseInt(window.getComputedStyle(game).getPropertyValue("width"));
 let boardheight=parseInt(window.getComputedStyle(game).getPropertyValue("height"));
 let boardtop = parseInt(window.getComputedStyle(game).getPropertyValue("top"));
-let boardbottom =parseInt(widow.getComputedStyle(game).getPropertyValue("buttom"));
+let boardbottom =parseInt(window.getComputedStyle(game).getPropertyValue("buttom"));
 let boardright = parseInt(window.getComputedStyle(game).getPropertyValue("right"));
-let boardleft = parseInt(window.getComputedStyle(game).get.getPropertyValue("left"));
+let boardleft = parseInt(window.getComputedStyle(game).getPropertyValue("left"));
 
 
 let brick=document.querySelectorAll(".game.bricks")
@@ -75,24 +75,24 @@ let startgame=()=>{
 
         let ballwidth=parseInt(window.getComputedStyle(ball).getPropertyValue("width"));
  balltop = parseInt(window.getComputedStyle(ball).getPropertyValue("top"));
- ballbottom =parseInt(widow.getComputedStyle(ball).getPropertyValue("buttom"));
+ ballbottom =parseInt(window.getComputedStyle(ball).getPropertyValue("buttom"));
  ballright = parseInt(window.getComputedStyle(ball).getPropertyValue("right"));
- ballleft = parseInt(window.getComputedStyle(ball).get.getPropertyValue("left"));
+ ballleft = parseInt(window.getComputedStyle(ball).getPropertyValue("left"));
 
 
  barrwidth=parseInt(window.getComputedStyle(racket).getPropertyValue("width"));
  bartop = parseInt(window.getComputedStyle(racket).getPropertyValue("top"));
- barbottom =parseInt(widow.getComputedStyle(racket).getPropertyValue("buttom"));
+ barbottom =parseInt(window.getComputedStyle(racket).getPropertyValue("buttom"));
  barright = parseInt(window.getComputedStyle(racket).getPropertyValue("right"));
- barleft = parseInt(window.getComputedStyle(racket).get.getPropertyValue("left"));
+ barleft = parseInt(window.getComputedStyle(racket).getPropertyValue("left"));
 
 
  boardwidth=parseInt(window.getComputedStyle(game).getPropertyValue("width"));
  boardheight=parseInt(window.getComputedStyle(game).getPropertyValue("height"));
  boardtop = parseInt(window.getComputedStyle(game).getPropertyValue("top"));
- boardbottom =parseInt(widow.getComputedStyle(game).getPropertyValue("buttom"));
+ boardbottom =parseInt(window.getComputedStyle(game).getPropertyValue("buttom"));
  boardright = parseInt(window.getComputedStyle(game).getPropertyValue("right"));
- boardleft = parseInt(window.getComputedStyle(game).get.getPropertyValue("left"));
+ boardleft = parseInt(window.getComputedStyle(game).getPropertyValue("left"));
 
  if (right && up)
  {
@@ -166,7 +166,7 @@ brickcollition();
 
     },1);
 };
-let boardbounds=game.getBoundingClient()
+let boardbounds=game.getBoundingClient();
 window.addEventListener("keydown",(e)=>{
 
 if (e.key==="ArrowRight" && 
@@ -199,7 +199,7 @@ const initial=()=>{
 
 const brickcollition=()=>{
     brick=document.querySelectorAll(".game.bricks")
-    for(for i=0;i<brick.length;i++)
+    for(var i=0;i<brick.length;i++)
     {
         let brickbounds=brick[i].getBoundingClientRect()
         let ballbounds=ball.getBoundingClientRect()
