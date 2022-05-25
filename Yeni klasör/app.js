@@ -119,14 +119,14 @@ if (!right && !up)
 }
 
 //boardcontrol
-if (ballleft<0+ballwidth/2)
+if (balleft<0+ballwidth/2)
 {
     right=true;
     bounce.play();
     bounce.currentTime=0;
 }
 
-if(ballleft>=boardwidth-ballwidth/2)
+if(balleft>=boardwidth-ballwidth/2)
 {
     right=false;
     bounce.play();
@@ -166,7 +166,7 @@ brickcollition();
 
     },1);
 };
-let boardbounds= game=getBoundingClient();
+let boardbounds=game.getBoundingClient()
 window.addEventListener("keydown",(e)=>{
 
 if (e.key==="ArrowRight" && 
